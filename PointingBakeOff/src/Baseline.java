@@ -6,7 +6,7 @@ import java.util.Collections;
 import processing.core.PApplet;
 
 
-public class Main extends PApplet
+public class Baseline extends PApplet
 {
     //when in doubt, consult the Processsing reference: https://processing.org/reference/
 
@@ -25,7 +25,7 @@ public class Main extends PApplet
 
 
     public static void main(String[] args) {
-        PApplet.main("Main");
+        PApplet.main("Baseline");
     }
 
     @Override
