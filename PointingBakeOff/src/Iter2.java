@@ -173,7 +173,7 @@ public class Iter2 extends PApplet
         trialNum++; // Increment trial number
 
         //in this example design, I move the cursor back to the middle after each click
-        //robot.mouseMove(width/2, (height)/2); //on click, move cursor to roughly center of window!
+//        robot.mouseMove(width/2, (height)/2); //on click, move cursor to roughly center of window!
     }
 
     //probably shouldn't have to edit this method
@@ -193,7 +193,7 @@ public class Iter2 extends PApplet
         if (trials.get(trialNum) == i) // see if current button is the target
             fill(255, 0, 0); // if so, fill red target
         else if (trialNum+1 < trials.size() && trials.get(trialNum+1) == i) // look ahead button
-            fill(255, 0, 0, 150); // fill translucent yellow
+            fill(255, 100, 100, 150); // fill translucent yellow
         else
             fill(200); // if not, fill gray
 
