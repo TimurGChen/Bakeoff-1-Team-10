@@ -102,13 +102,22 @@ public class IterFinal extends PApplet
 
     private void laserPtr() {
         // set stroke & fill
+//        stroke(255, 0, 0, 200);
+//        strokeWeight(2F);
+//        noFill();
+
+//        ellipse(mouseX, mouseY, 40, 40); //draw user cursor as a circle with a diameter of 20
+
+        // center dot
+        fill(255, 0,0,200);
+        ellipse(mouseX, mouseY, 10, 10);
+
+        // cross
+        // set stroke & fill
         stroke(255, 0, 0, 200);
         strokeWeight(2F);
-        noFill();
-
-        ellipse(mouseX, mouseY, 40, 40); //draw user cursor as a circle with a diameter of 20
-        line(mouseX-40, mouseY, mouseX+40, mouseY);
-        line(mouseX, mouseY-40, mouseX, mouseY+40);
+        line(mouseX-20, mouseY, mouseX+20, mouseY);
+        line(mouseX, mouseY-20, mouseX, mouseY+20);
         noStroke();
 
     }
@@ -192,8 +201,10 @@ public class IterFinal extends PApplet
 
         if (trials.get(trialNum) == i) // see if current button is the target
             fill(255, 0, 0); // if so, fill red target
+//            fill(255, 255, 0); // Yellow target
         else if (trialNum+1 < trials.size() && trials.get(trialNum+1) == i) // look ahead button
-            fill(255, 100, 100, 150); // fill translucent yellow
+            fill(255, 100, 100, 150); // fill translucent red
+//            fill(255, 255,0,100); // Yellow Look-Ahead
         else
             fill(200); // if not, fill gray
 
